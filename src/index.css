@@ -1,43 +1,45 @@
 a {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 body, p {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-.button {
-  /* Button */
-  /* Auto Layout */
-
+button {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 12px 16px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   position: absolute;
   width: 136px;
   height: 48px;
-  right: 48px;
-  top: 288px;
+  right: 3rem;
+  bottom: 3rem;
 
   color: #FFFFFF;
-
-  /* Primary-Dark */
-
   background: #253B6E;
-  /* Primary-Dark */
-
   border: 1px solid #253B6E;
   box-sizing: border-box;
   border-radius: 3px;
+}
+
+button.disabled {
+  background-color: white;
+  border: solid 2px  light-grey;
+}
+
+button:hover {
+  box-shadow: 0 2px 6px 0 #363C494D;
 }
 
 form {
@@ -55,32 +57,33 @@ form {
 }
 
 h1 {
-  font-family: Volkhov;
+  font-family: "Volkhov";
   font-weight: 700;
   font-size: 2rem;
   line-height: 1.5;
 }
 
 h2 {
-  font-family: Volkhov;
+  font-family: "Volkhov";
   font-weight: 400;
   font-size: 2rem;
   line-height: 1.5;
 }
 
 h3 {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 .helper-text {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-weight: 400;
   font-size: 0.875rem;
   font-style: italic;
   line-height: 0;
+  margin-bottom: 0.5rem;
 }
 
 .header {
@@ -90,28 +93,30 @@ h3 {
   left: calc(50% - 1440px/2);
   top: 0px;
 
-  /* White */
   background: #FFFFFF;
 
-  /* Floating Element */
   box-shadow: 0px 1px 10px rgba(54, 60, 73, 0.3);
 }
 
-input, label {
-  display: block;
+input {
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 label {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-weight: 400;
   font-size: 1rem;
   line-height: 0;
   margin-bottom: 0.5rem;
-  margin-left: 1rem;
+  margin-right: 0.25rem;
 }
 
 li {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-weight: 400;
   font-size: 1rem;
   line-height: 2;
@@ -126,7 +131,7 @@ li {
   top: 20px;
   
   /* Link */
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -138,81 +143,41 @@ li {
   text-align: right;
   text-decoration-line: underline;
   
-  /* Primary-Mid */
   color: #1F5F8B;
 }
 
 .logo {
-  /* Vector 1 */
+  position: absolute;
+  width: 139.3px;
+  height: 42px;
+  left: 244px;
+  top: 11px;
+}
 
-  /* position: absolute;
-  width: 126.3px;
-  height: 39.92px;
-  left: 13px;
-  top: 1.02px; */
-
-  /* Primary-Highlight */
-  background: #1891AC;
-
-  /* Primary-Highlight */
-  border: 1px solid #1891AC;
+.robot {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 436px;
+  height: 702px;
+  z-index: -1;
 }
 
 .search-flights {
-  /* Form / Search Flights */
   position: absolute;
   width: 952px;
   height: 384px;
   left: 244px;
   top: 224px;
 
-  /* White */
   background: #FFFFFF;
 
-  /* Floating Element */
   box-shadow: 0px 1px 10px rgba(54, 60, 73, 0.3);
 }
 
 .small-body {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.5;
-}
-
-.subtitle {
-  /* position: static;
-  width: 122px;
-  height: 48px;
-  left: 0px;
-  top: 80px; */
-
-  font-family: Volkhov;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 48px;
-  /* identical to box height, or 150% */
-
-  /* Black */
-  color: #363C49;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 32px 0px;
-}
-
-.robot-smoke {
-  /* Fill 1 */
-
-  position: absolute;
-  left: 0.09%;
-  right: 8.24%;
-  top: 13.73%;
-  bottom: 0.14%;
-
-  /* Mid-Grey */
-  background: #676E7E;
 }
