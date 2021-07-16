@@ -4,9 +4,7 @@ import Robot from "./robot";
 const SearchFlights = () => {
   return(
     <div>
-      <div className="welcome-header">
-        <h1>Welcome!</h1>
-      </div>
+      <div className="welcome-header"><h1>Welcome!</h1></div>
       <SearchFlightsForm />
       <Robot />
     </div>
