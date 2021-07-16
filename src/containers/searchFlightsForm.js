@@ -1,8 +1,8 @@
-import Datepicker from "./datepicker";
-import LocationsFromDatalist from "./locationsFromDatalist";
-import LocationsToDatalist from "./locationsToDatalist"
-import PassengerCounter from "./passengerCounter";
-import SingleReturnJourneyRadio from "./singleReturnJourneyRadio";
+import Datepicker from "../components/datepicker";
+import LocationsFromDatalist from "../components/locationsFromDatalist";
+import LocationsToDatalist from "../components/locationsToDatalist"
+import PassengerCounter from "../components/passengerCounter";
+import SingleReturnJourneyRadio from "../components/singleReturnJourneyRadio";
 
 const SearchFlightsForm = () => {
   return(

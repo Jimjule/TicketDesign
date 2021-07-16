@@ -1,6 +1,6 @@
 const LocationsFromDatalist = () => {
   return(
-    <div className="form-column">
+    <div className="form-column datalist-locations">
       <label>Departure From</label>
         <input list="locations-from" placeholder="From where?" />
           <datalist id="locations-from">

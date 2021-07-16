@@ -1,5 +1,5 @@
 import SearchFlightsForm from "./searchFlightsForm";
-import Robot from "./robot";
+import Robot from "../components/robot";
 
 const SearchFlights = () => {
   return(

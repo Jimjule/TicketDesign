@@ -1,5 +1,5 @@
-import Logo from "./logo";
-import Login from "./login";
+import Logo from "../components/logo";
+import Login from "../components/login";
 
 const Header = () => {
   return(

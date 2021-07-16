@@ -1,6 +1,6 @@
 import './App.css';
-import Header from './components/header';
-import SearchFlights from './components/searchFlights';
+import Header from './containers/header';
+import SearchFlights from './containers/searchFlights';
 
 function App() {
   return (
