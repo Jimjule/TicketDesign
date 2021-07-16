@@ -1,3 +1,5 @@
+import CounterInput from "react-counter-input";
+
 const SearchFlightsForm = () => {
   function dateToday() {
     let today = new Date();
@@ -17,32 +19,39 @@ const SearchFlightsForm = () => {
         </div>
         <div className="form-row">
           <div className="form-column">
-            <input type="radio" value="return" name="trip-type" checked="checked" />
-            <label>Return trip</label>
+            <label>
+              <input type="radio" value="return" name="trip-type" checked="checked" />
+              Return trip
+            </label>
           </div>
-          <div>
-            <input type="radio" value="single" name="trip-type" />
-            <label>One-way trip</label>
+          <div className="form-column">
+            <label>
+              <input type="radio" value="single" name="trip-type" />
+              One-way trip
+            </label>
           </div>
         </div>
         <div className="form-row">
-          <div>
+          <div className="form-column">
             <label>Departure From</label>
             <input type="text" label="Departure From" placeholder="From where?" value="London, All Airports" />
           </div>
-
-          <div>
+          <div className="form-column">
             <label>To Destination</label>
             <input type="text" label="To Destination" placeholder="Where to?" />
           </div>
+          <div className="form-column">
+            <label>Passengers</label>
+            <CounterInput count={1} min={1} max={20} />
+          </div>
         </div>
         <div className="form-row">
-          <div>
+          <div className="form-column">
             <label>Date Departing</label>
             <input type="date" min={dateToday()} />
           </div>
 
-          <div>
+          <div className="form-column">
             <label>Date Returning</label>
             <input type="date" label="Date Returning" />
             <button>

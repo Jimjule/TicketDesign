@@ -61,6 +61,7 @@ form {
 .form-column {
   display: flex;
   flex-direction: column;
+  margin-right: 2rem;
 }
 
 h1 {
@@ -113,11 +114,17 @@ input {
   padding-right: 1rem;
 }
 
+input:active, input:focus {
+  border-color: #1891AC;
+  border: 2px solid #1891AC;
+}
+
 label {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 1rem;
   line-height: 0;
+  align-self: flex-start;
   margin-bottom: 0.5rem;
   margin-right: 0.25rem;
 }
@@ -130,7 +137,6 @@ li {
 }
 
 .login {
-  /* Login */
   position: absolute;
   width: 41px;
   height: 24px;
